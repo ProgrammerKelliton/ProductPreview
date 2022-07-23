@@ -1,0 +1,12 @@
+.Card {
+    display: inline-flex;
+}
+
+.Card__image,
+.Card__info {
+    width: 200px;
+}
+
+.Card__info {
+    background-color: white;
+}
