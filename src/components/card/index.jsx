@@ -1,5 +1,6 @@
 import "./style.css";
 import ImageProduct from "../../assets/images/image-product-desktop.jpg";
+import CartImage from "../../assets/icons/icon-cart.svg";
 
 export default function Card() {
     return (
@@ -13,21 +14,22 @@ export default function Card() {
                 <span className="info__type">Perfume</span>
                 <h1 className="info__name">Gabrielle Essence Eau De Parfum</h1>
                 <p className="info__desc">
-                    Mussum Ipsum, cacilds vidis litro abertis. Posuere libero
-                    varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit
-                    amet nisi.Aenean aliquam molestie leo, vitae iaculis
-                    nisl.Mais vale um bebadis conhecidiss, que um alcoolatra
-                    anonimis.A ordem dos tratores não altera o pão duris.
+                    A floral, solar and voluptuous interpretation composed by
+                    Olivier Polge, Perfumer-Creator for the House of CHANEL.
                 </p>
 
                 <div className="info__price">
                     <h1 className="price__current">$149.99</h1>
-                    <h2 className="price__preview">169.99</h2>
+                    <h2 className="price__preview">$169.99</h2>
                 </div>
 
                 <button className="info__add">
-                    <img src="" alt="" />
-                    <span>Add to Cart</span>
+                    <img
+                        className="add__icon"
+                        src={CartImage}
+                        alt="Cart image"
+                    />
+                    Add to Cart
                 </button>
             </div>
         </div>

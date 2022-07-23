@@ -1,13 +1,132 @@
+:root {
+    --text-size: clamp(1.5rem, 2.5vw, 2rem);
+    --item-padding: 0 20px;
+}
+
 .Card {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
     width: 50%;
-    height: 80%;
+    flex-direction: row;
 }
 
 .Card__info {
-    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    flex: 1;
 }
 
 .Card__info {
-    background-color: white;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0 10px 10px 0;
+}
+
+.Card__image {
+    height: 100%;
+    flex: 1;
+}
+
+.Card__image {
+    border-radius: 10px 0 0 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.info__name {
+    font-family: "Fraunces", serif;
+    font-size: var(--text-size);
+}
+
+.info__name {
+    margin-right: 50px;
+    line-height: var(--text-size);
+}
+
+.info__desc {
+    font-family: "Montserrat", sans-serif;
+    font-size: small;
+    color: grey;
+}
+
+.info__type,
+.info__name,
+.info__desc,
+.info__price {
+    margin: var(--item-padding);
+}
+
+.info__type {
+    padding-top: 20px;
+}
+
+.info__type {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: small;
+    letter-spacing: 5px;
+}
+
+.info__price {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.price__current {
+    color: rgb(65, 146, 115);
+    font-family: "Fraunces", serif;
+}
+
+.price__preview {
+    font-weight: lighter;
+    text-decoration: line-through;
+    font-size: medium;
+    color: grey;
+}
+
+.info__add {
+    background-color: rgb(65, 146, 115);
+    color: white;
+    border-radius: 10px;
+    border-color: transparent;
+    font-size: medium;
+    font-weight: 700;
+}
+
+.info__add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: var(--item-padding);
+    padding: 5% 0;
+    margin-bottom: 20px;
+}
+
+.info__add:hover {
+    background-color: black;
+}
+
+.add__icon {
+    margin: 0 10px;
+}
+
+@media (max-width: 600px) {
+    .Card {
+        flex-direction: column;
+        height: 60%;
+    }
+    .Card__image {
+        border-radius: 10px 10px 0 0;
+        width: 180%;
+        height: 60%;
+    }
+    .Card__info {
+        gap: 5px;
+        width: 180%;
+        border-radius: 0 0 10px 10px;
+    }
 }
