@@ -27,3 +27,9 @@ body {
         rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     border-radius: 10px;
 }
+
+@media (max-height: 670px) {
+    .App {
+        height: 95vh;
+    }
+}
