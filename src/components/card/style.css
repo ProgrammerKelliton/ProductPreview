@@ -117,7 +117,6 @@
 @media (max-width: 600px) {
     .Card {
         flex-direction: column;
-        height: 60%;
     }
     .Card__image {
         border-radius: 10px 10px 0 0;
@@ -127,6 +126,7 @@
     .Card__info {
         gap: 5px;
         width: 180%;
+        padding-bottom: 30%;
         border-radius: 0 0 10px 10px;
     }
 }
