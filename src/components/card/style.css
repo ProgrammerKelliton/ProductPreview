@@ -117,14 +117,16 @@
 @media (max-width: 600px) {
     .Card {
         flex-direction: column;
+        height: 90%;
     }
     .Card__image {
         border-radius: 10px 10px 0 0;
         width: 180%;
-        height: 60%;
+        height: 45%;
     }
     .Card__info {
         gap: 5px;
+        height: 45%;
         width: 180%;
         border-radius: 0 0 10px 10px;
     }
